@@ -1,0 +1,26 @@
+{
+  "name": "TechCarePackage",
+  "version": "0.1.0",
+  "description": "Technical Beginner/Intermediate Resource References",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "gulp": "~3.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juvoni/TechCarePackage.git"
+  },
+  "author": "Juvoni Beckford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juvoni/TechCarePackage/issues"
+  },
+  "homepage": "https://github.com/juvoni/TechCarePackage"
+}

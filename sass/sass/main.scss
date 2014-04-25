@@ -33,7 +33,18 @@ q{
 		top: 1030px;
 	}
 }
+#OnlineCourses{
+	.row{
+		height: 400px;
+	}
+}
+.info{
+	// position: absolute;
+	position: relative;
+	bottom:0;
+}
 .logo{
+	vertical-align: middle;
 	margin-bottom: 20px;
 }
 #intro{
