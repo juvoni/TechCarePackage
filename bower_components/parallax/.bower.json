@@ -1,0 +1,39 @@
+{
+  "name": "parallax",
+  "description": "Parallax Engine that reacts to the orientation of a smart device.",
+  "version": "1.1.1",
+  "license": "MIT",
+  "homepage": "http://wagerfield.github.io/parallax/",
+  "authors": [
+    "Matthew Wagerfield <matthew@wagerfield.com>"
+  ],
+  "main": [
+    "deploy/parallax.js",
+    "deploy/parallax.min.js",
+    "deploy/jquery.parallax.js",
+    "deploy/jquery.parallax.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "assets",
+    "source",
+    "examples"
+  ],
+  "keywords": [
+    "parallax",
+    "gyroscope",
+    "jquery",
+    "javascript",
+    "library"
+  ],
+  "_release": "1.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.1",
+    "commit": "87eb1f2e4daa5eed3c98c583dacc9e0be9af0f8c"
+  },
+  "_source": "git://github.com/wagerfield/parallax.git",
+  "_target": "~1.1.1",
+  "_originalSource": "parallax",
+  "_direct": true
+}
