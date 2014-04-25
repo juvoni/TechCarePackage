@@ -9,9 +9,10 @@
 /* ==========================================================================
    Custom
    ========================================================================== */
-
+q{
+	display: block;
+}
 .container{
-	overflow:scroll;
 }
 #sidebar{
 	min-height:50px;
@@ -25,6 +26,9 @@
 		position: fixed;
 		top: 30px;
 	}
+}
+.logo{
+	margin-bottom: 20px;
 }
 #intro{
 	margin-bottom: 600px;
