@@ -33,13 +33,45 @@
 			<div class="cloud x5"></div>
 		</div>
 		<div >
-			<img class="carepackage" src="img/carepackage.png" height="637" width="447" alt="Care Package" data-100="top:120px;opacity:1" data-900="top:900px;opacity:0.6;" data-1200="top:1200px;opacity:0;">
+			<img class="carepackage" src="img/carepackage.png" height="637" width="447" alt="Care Package" data-100="top:120px;opacity:1" data-400="top:400px;opacity:0.6;" data-600="top:600px;opacity:0;">
 		</div>
 	</section>
+	<div id="container" class="col-md-8" data-spy="scroll" data-target=".sidebar" >
+		<section id="intro">
+			<h2>Intro</h2>
+			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, aperiam, eos neque numquam a aliquam et quas quibusdam cum veniam enim reprehenderit magnam! Neque excepturi repellendus commodi deserunt quod officiis.</span>
+			<span>Saepe, aliquid ab possimus id corrupti unde nostrum omnis nemo beatae aut esse impedit repudiandae voluptate quo tenetur iste aspernatur distinctio similique sed quas. Eaque alias rem nostrum facere nobis.</span>
+			<span>Porro, ab, nobis, officia expedita praesentium unde quas laudantium obcaecati cupiditate tempora facilis repellat debitis molestias eligendi laborum nam repellendus minima ratione dolorum corporis perferendis omnis pariatur iure eum sunt?</span>
+			<span>Dolor, cupiditate, nesciunt, iste expedita ab labore commodi fuga quisquam molestiae unde praesentium dicta optio assumenda illum maxime a qui? Soluta, porro expedita molestiae fugiat omnis reiciendis illum unde doloribus?</span></p>
+		</section>
+		<section id="StarterResources">
+			<h1>Starter Resources</h1>
+			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quisquam, excepturi, omnis quidem neque eos aspernatur hic enim vero velit soluta molestiae pariatur quis repellendus aut iste amet perferendis adipisci!</span>
+			<span>Porro, ipsum, ea, distinctio enim natus debitis vero perferendis laborum soluta sequi illo error sit maiores. Quisquam, in voluptatibus consequatur temporibus praesentium qui tempora id corporis nihil reiciendis natus alias.</span>
+			<span>Molestiae, ut dignissimos veritatis iste pariatur corrupti perferendis dolore voluptatibus non quae fugit illum error totam cupiditate suscipit harum ducimus. Ipsam, et provident velit architecto veniam amet labore iusto tempora.</span>
+			<span>Quisquam, perspiciatis, pariatur, atque, illum eaque voluptate minima cum quis ipsa aut quia dicta repudiandae mollitia facere consectetur aliquid distinctio nobis soluta? Nemo, natus, quaerat sit quae in quos facere.</span>
+			<span>Officiis, expedita, ipsa neque nobis maxime amet omnis modi nulla est ullam voluptate placeat reiciendis harum facere totam? Quibusdam, dolore, repellendus sit possimus dolores illo eum eius architecto officiis cum.</span></p>
+		</section>
+	</div>
+	<nav id="sidebar" class="col-md-3" data-spy="affix-nav" >
+		<ul class="nav" data-spy="affix" data-offset-top="1000">
+			<li><a href="#intro">Intro</a></li>
+			<li><a href="#StarterResources">Starter Resources
+				<ul class="nav">
+					<li><a href="#OnlineCourses">Online Courses</a></li>
+					<li><a href="#RecommendedTechSites">Recommended Tech Sites</a></li>
+					<li><a href="#BeginnerVocab">Beginner Vocab</a></li>
+				</ul>
+			</a></li>
+		</ul>
+	</nav>
 	<script>
 	$(document).ready(function(){
 		var s = skrollr.init();
-	});
+		$('#container').scrollspy({ target: '.sidebar' });
+        $('#nav-wrapper').height($("#nav").height());
+
+    	});
 	</script>
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<!--<script>
@@ -52,5 +84,7 @@
 	</script>-->
 </body>
 <script src="bower_components/parallax/deploy/jquery.parallax.min.js"></script>
+<script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/affix.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.22/skrollr.min.js"></script>
 </html>

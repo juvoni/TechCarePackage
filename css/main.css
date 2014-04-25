@@ -7,41 +7,37 @@
 /* ==========================================================================
    Custom
    ========================================================================== */
-@-moz-keyframes swing {
-  /* line 14, ../sass/sass/main.scss */
-  0% {
-    -moz-transform: rotate(-3deg);
-  }
-
-  /* line 15, ../sass/sass/main.scss */
-  50% {
-    -moz-transform: rotate(3deg);
-  }
-
-  /* line 16, ../sass/sass/main.scss */
-  100% {
-    -moz-transform: rotate(-3deg);
-  }
+/* line 13, ../sass/sass/main.scss */
+#sidebar {
+  min-height: 50px;
+  min-width: 200px;
+}
+/* line 16, ../sass/sass/main.scss */
+#sidebar .affix-top {
+  position: static;
+  margin-top: 30px;
+}
+/* line 20, ../sass/sass/main.scss */
+#sidebar .affix {
+  position: fixed;
+  top: 70px;
 }
 
-@-webkit-keyframes swing {
-  /* line 19, ../sass/sass/main.scss */
-  0% {
-    -webkit-transform: rotate(-3deg);
-  }
-
-  /* line 20, ../sass/sass/main.scss */
-  50% {
-    -webkit-transform: rotate(3deg);
-  }
-
-  /* line 21, ../sass/sass/main.scss */
-  100% {
-    -webkit-transform: rotate(-3deg);
-  }
+/* line 28, ../sass/sass/main.scss */
+li.active,
+li.active:hover,
+li.active:focus {
+  background: #9CF;
 }
 
-/* line 25, ../sass/sass/main.scss */
+/* line 33, ../sass/sass/main.scss */
+li.active a,
+li.active:hover a,
+li:focus a {
+  color: #FFF;
+}
+
+/* line 37, ../sass/sass/main.scss */
 .carepackage {
   position: absolute;
   top: 120px;
@@ -55,7 +51,7 @@
   -webkit-transform-origin: top;
 }
 
-/* line 38, ../sass/sass/main.scss */
+/* line 50, ../sass/sass/main.scss */
 .title {
   position: absolute;
   top: 20px;
@@ -69,10 +65,44 @@
   text-shadow: 0px 0px 0 #dedede, 1px 1px 0 #d1d1d1, 2px 2px 0 #c5c5c5, 3px 3px 0 #b8b8b8, 4px 4px 0 #acacac, 5px 5px 0 #9f9f9f, 6px 6px 0 #939393, 7px 7px 0 #878787, 8px 8px 7px rgba(0, 0, 0, 0.35), 8px 8px 1px rgba(0, 0, 0, 0.5), 0px 0px 7px rgba(0, 0, 0, 0.2);
 }
 
+@-moz-keyframes swing {
+  /* line 64, ../sass/sass/main.scss */
+  0% {
+    -moz-transform: rotate(-3deg);
+  }
+
+  /* line 65, ../sass/sass/main.scss */
+  50% {
+    -moz-transform: rotate(3deg);
+  }
+
+  /* line 66, ../sass/sass/main.scss */
+  100% {
+    -moz-transform: rotate(-3deg);
+  }
+}
+
+@-webkit-keyframes swing {
+  /* line 69, ../sass/sass/main.scss */
+  0% {
+    -webkit-transform: rotate(-3deg);
+  }
+
+  /* line 70, ../sass/sass/main.scss */
+  50% {
+    -webkit-transform: rotate(3deg);
+  }
+
+  /* line 71, ../sass/sass/main.scss */
+  100% {
+    -webkit-transform: rotate(-3deg);
+  }
+}
+
 /* ==========================================================================
   Clouds
 ========================================================================== */
-/* line 53, ../sass/sass/main.scss */
+/* line 76, ../sass/sass/main.scss */
 #clouds {
   padding: 100px 0;
   height: 1024px;
@@ -81,7 +111,7 @@
 }
 
 /*Time to finalise the cloud shape*/
-/* line 64, ../sass/sass/main.scss */
+/* line 87, ../sass/sass/main.scss */
 .cloud {
   width: 200px;
   height: 60px;
@@ -92,7 +122,7 @@
   position: relative;
 }
 
-/* line 75, ../sass/sass/main.scss */
+/* line 98, ../sass/sass/main.scss */
 .cloud:before, .cloud:after {
   content: '';
   position: absolute;
@@ -110,7 +140,7 @@
   -moz-transform: rotate(30deg);
 }
 
-/* line 91, ../sass/sass/main.scss */
+/* line 114, ../sass/sass/main.scss */
 .cloud:after {
   width: 120px;
   height: 120px;
@@ -120,7 +150,7 @@
 }
 
 /*Time to animate*/
-/* line 97, ../sass/sass/main.scss */
+/* line 120, ../sass/sass/main.scss */
 .x1 {
   -webkit-animation: moveclouds 15s linear infinite;
   -moz-animation: moveclouds 15s linear infinite;
@@ -128,7 +158,7 @@
 }
 
 /*variable speed, opacity, and position of clouds for realistic effect*/
-/* line 104, ../sass/sass/main.scss */
+/* line 127, ../sass/sass/main.scss */
 .x2 {
   left: 200px;
   -webkit-transform: scale(0.6);
@@ -143,7 +173,7 @@
   -o-animation: moveclouds 25s linear infinite;
 }
 
-/* line 118, ../sass/sass/main.scss */
+/* line 141, ../sass/sass/main.scss */
 .x3 {
   left: -250px;
   top: -200px;
@@ -157,7 +187,7 @@
   -o-animation: moveclouds 20s linear infinite;
 }
 
-/* line 131, ../sass/sass/main.scss */
+/* line 154, ../sass/sass/main.scss */
 .x4 {
   left: 470px;
   top: -250px;
@@ -171,7 +201,7 @@
   -o-animation: moveclouds 18s linear infinite;
 }
 
-/* line 144, ../sass/sass/main.scss */
+/* line 167, ../sass/sass/main.scss */
 .x5 {
   left: -150px;
   top: -150px;
@@ -186,36 +216,36 @@
 }
 
 @-webkit-keyframes moveclouds {
-  /* line 158, ../sass/sass/main.scss */
+  /* line 181, ../sass/sass/main.scss */
   0% {
     margin-left: 1000px;
   }
 
-  /* line 159, ../sass/sass/main.scss */
+  /* line 182, ../sass/sass/main.scss */
   100% {
     margin-left: -1000px;
   }
 }
 
 @-moz-keyframes moveclouds {
-  /* line 162, ../sass/sass/main.scss */
+  /* line 185, ../sass/sass/main.scss */
   0% {
     margin-left: 1000px;
   }
 
-  /* line 163, ../sass/sass/main.scss */
+  /* line 186, ../sass/sass/main.scss */
   100% {
     margin-left: -1000px;
   }
 }
 
 @-o-keyframes moveclouds {
-  /* line 166, ../sass/sass/main.scss */
+  /* line 189, ../sass/sass/main.scss */
   0% {
     margin-left: 1000px;
   }
 
-  /* line 167, ../sass/sass/main.scss */
+  /* line 190, ../sass/sass/main.scss */
   100% {
     margin-left: -1000px;
   }
@@ -224,12 +254,12 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 175, ../sass/sass/main.scss */
+/* line 198, ../sass/sass/main.scss */
 html, button, input, select, textarea {
   color: #222;
 }
 
-/* line 179, ../sass/sass/main.scss */
+/* line 202, ../sass/sass/main.scss */
 html {
   font-size: 1em;
   line-height: 1.5;
@@ -240,7 +270,7 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 190, ../sass/sass/main.scss */
+/* line 213, ../sass/sass/main.scss */
 ::-moz-selection, ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -249,7 +279,7 @@ html {
 /*
  * A better looking default horizontal rule
  */
-/* line 199, ../sass/sass/main.scss */
+/* line 222, ../sass/sass/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -263,7 +293,7 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-/* line 213, ../sass/sass/main.scss */
+/* line 236, ../sass/sass/main.scss */
 audio, canvas, img, video {
   vertical-align: middle;
 }
@@ -271,7 +301,7 @@ audio, canvas, img, video {
 /*
  * Remove default fieldset styles.
  */
-/* line 221, ../sass/sass/main.scss */
+/* line 244, ../sass/sass/main.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -281,7 +311,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 231, ../sass/sass/main.scss */
+/* line 254, ../sass/sass/main.scss */
 textarea {
   resize: vertical;
 }
@@ -289,7 +319,7 @@ textarea {
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
-/* line 239, ../sass/sass/main.scss */
+/* line 262, ../sass/sass/main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -306,7 +336,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 258, ../sass/sass/main.scss */
+/* line 281, ../sass/sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -314,7 +344,7 @@ textarea {
   /* IE 6/7 fallback */
   *text-indent: -9999px;
 }
-/* line 264, ../sass/sass/main.scss */
+/* line 287, ../sass/sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -325,7 +355,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 276, ../sass/sass/main.scss */
+/* line 299, ../sass/sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -334,7 +364,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 285, ../sass/sass/main.scss */
+/* line 308, ../sass/sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -345,7 +375,7 @@ textarea {
   position: absolute;
   width: 1px;
 }
-/* line 295, ../sass/sass/main.scss */
+/* line 318, ../sass/sass/main.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -362,7 +392,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 315, ../sass/sass/main.scss */
+/* line 338, ../sass/sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -378,18 +408,18 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 331, ../sass/sass/main.scss */
+/* line 354, ../sass/sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 332, ../sass/sass/main.scss */
+/* line 355, ../sass/sass/main.scss */
 .clearfix:before {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-/* line 338, ../sass/sass/main.scss */
+/* line 361, ../sass/sass/main.scss */
 .clearfix:after {
   content: " ";
   /* 1 */
@@ -418,7 +448,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 373, ../sass/sass/main.scss */
+  /* line 396, ../sass/sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -427,20 +457,20 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 380, ../sass/sass/main.scss */
+  /* line 403, ../sass/sass/main.scss */
   a {
     text-decoration: underline;
   }
-  /* line 382, ../sass/sass/main.scss */
+  /* line 405, ../sass/sass/main.scss */
   a:visited {
     text-decoration: underline;
   }
-  /* line 385, ../sass/sass/main.scss */
+  /* line 408, ../sass/sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 389, ../sass/sass/main.scss */
+  /* line 412, ../sass/sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -448,34 +478,34 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 395, ../sass/sass/main.scss */
+  /* line 418, ../sass/sass/main.scss */
   .ir a:after {
     content: "";
   }
 
-  /* line 399, ../sass/sass/main.scss */
+  /* line 422, ../sass/sass/main.scss */
   a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 403, ../sass/sass/main.scss */
+  /* line 426, ../sass/sass/main.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 407, ../sass/sass/main.scss */
+  /* line 430, ../sass/sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 411, ../sass/sass/main.scss */
+  /* line 434, ../sass/sass/main.scss */
   tr {
     page-break-inside: avoid;
   }
 
-  /* line 414, ../sass/sass/main.scss */
+  /* line 437, ../sass/sass/main.scss */
   img {
     page-break-inside: avoid;
     max-width: 100% !important;
@@ -485,13 +515,13 @@ textarea {
     margin: 0.5cm;
 }
 
-  /* line 422, ../sass/sass/main.scss */
+  /* line 445, ../sass/sass/main.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 426, ../sass/sass/main.scss */
+  /* line 449, ../sass/sass/main.scss */
   h2, h3 {
     page-break-after: avoid;
   }
