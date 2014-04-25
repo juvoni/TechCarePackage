@@ -44,7 +44,7 @@
 /* line 25, ../sass/sass/main.scss */
 .carepackage {
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -70,14 +70,166 @@
 }
 
 /* ==========================================================================
+  Clouds
+========================================================================== */
+/* line 53, ../sass/sass/main.scss */
+#clouds {
+  padding: 100px 0;
+  height: 1024px;
+  background: #c9dbe9;
+  background: linear-gradient(to bottom, #b5dbe9 0%, #ffffff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+/* line 64, ../sass/sass/main.scss */
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: relative;
+}
+
+/* line 75, ../sass/sass/main.scss */
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+/* line 91, ../sass/sass/main.scss */
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+/*Time to animate*/
+/* line 97, ../sass/sass/main.scss */
+.x1 {
+  -webkit-animation: moveclouds 15s linear infinite;
+  -moz-animation: moveclouds 15s linear infinite;
+  -o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+/* line 104, ../sass/sass/main.scss */
+.x2 {
+  left: 200px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6;
+  /*opacity proportional to the size*/
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  -webkit-animation: moveclouds 25s linear infinite;
+  -moz-animation: moveclouds 25s linear infinite;
+  -o-animation: moveclouds 25s linear infinite;
+}
+
+/* line 118, ../sass/sass/main.scss */
+.x3 {
+  left: -250px;
+  top: -200px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+/* line 131, ../sass/sass/main.scss */
+.x4 {
+  left: 470px;
+  top: -250px;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 18s linear infinite;
+  -moz-animation: moveclouds 18s linear infinite;
+  -o-animation: moveclouds 18s linear infinite;
+}
+
+/* line 144, ../sass/sass/main.scss */
+.x5 {
+  left: -150px;
+  top: -150px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  /*opacity proportional to the size*/
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+  /* line 158, ../sass/sass/main.scss */
+  0% {
+    margin-left: 1000px;
+  }
+
+  /* line 159, ../sass/sass/main.scss */
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+@-moz-keyframes moveclouds {
+  /* line 162, ../sass/sass/main.scss */
+  0% {
+    margin-left: 1000px;
+  }
+
+  /* line 163, ../sass/sass/main.scss */
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+@-o-keyframes moveclouds {
+  /* line 166, ../sass/sass/main.scss */
+  0% {
+    margin-left: 1000px;
+  }
+
+  /* line 167, ../sass/sass/main.scss */
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+/* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 55, ../sass/sass/main.scss */
+/* line 175, ../sass/sass/main.scss */
 html, button, input, select, textarea {
   color: #222;
 }
 
-/* line 59, ../sass/sass/main.scss */
+/* line 179, ../sass/sass/main.scss */
 html {
   font-size: 1em;
   line-height: 1.5;
@@ -88,7 +240,7 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 70, ../sass/sass/main.scss */
+/* line 190, ../sass/sass/main.scss */
 ::-moz-selection, ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -97,7 +249,7 @@ html {
 /*
  * A better looking default horizontal rule
  */
-/* line 79, ../sass/sass/main.scss */
+/* line 199, ../sass/sass/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -111,7 +263,7 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-/* line 93, ../sass/sass/main.scss */
+/* line 213, ../sass/sass/main.scss */
 audio, canvas, img, video {
   vertical-align: middle;
 }
@@ -119,7 +271,7 @@ audio, canvas, img, video {
 /*
  * Remove default fieldset styles.
  */
-/* line 101, ../sass/sass/main.scss */
+/* line 221, ../sass/sass/main.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -129,7 +281,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 111, ../sass/sass/main.scss */
+/* line 231, ../sass/sass/main.scss */
 textarea {
   resize: vertical;
 }
@@ -137,7 +289,7 @@ textarea {
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
-/* line 119, ../sass/sass/main.scss */
+/* line 239, ../sass/sass/main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -154,7 +306,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 138, ../sass/sass/main.scss */
+/* line 258, ../sass/sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -162,7 +314,7 @@ textarea {
   /* IE 6/7 fallback */
   *text-indent: -9999px;
 }
-/* line 144, ../sass/sass/main.scss */
+/* line 264, ../sass/sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -173,7 +325,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 156, ../sass/sass/main.scss */
+/* line 276, ../sass/sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -182,7 +334,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 165, ../sass/sass/main.scss */
+/* line 285, ../sass/sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -193,7 +345,7 @@ textarea {
   position: absolute;
   width: 1px;
 }
-/* line 175, ../sass/sass/main.scss */
+/* line 295, ../sass/sass/main.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -210,7 +362,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 195, ../sass/sass/main.scss */
+/* line 315, ../sass/sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -226,18 +378,18 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 211, ../sass/sass/main.scss */
+/* line 331, ../sass/sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 212, ../sass/sass/main.scss */
+/* line 332, ../sass/sass/main.scss */
 .clearfix:before {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-/* line 218, ../sass/sass/main.scss */
+/* line 338, ../sass/sass/main.scss */
 .clearfix:after {
   content: " ";
   /* 1 */
@@ -266,7 +418,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 253, ../sass/sass/main.scss */
+  /* line 373, ../sass/sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -275,20 +427,20 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 260, ../sass/sass/main.scss */
+  /* line 380, ../sass/sass/main.scss */
   a {
     text-decoration: underline;
   }
-  /* line 262, ../sass/sass/main.scss */
+  /* line 382, ../sass/sass/main.scss */
   a:visited {
     text-decoration: underline;
   }
-  /* line 265, ../sass/sass/main.scss */
+  /* line 385, ../sass/sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 269, ../sass/sass/main.scss */
+  /* line 389, ../sass/sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -296,34 +448,34 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 275, ../sass/sass/main.scss */
+  /* line 395, ../sass/sass/main.scss */
   .ir a:after {
     content: "";
   }
 
-  /* line 279, ../sass/sass/main.scss */
+  /* line 399, ../sass/sass/main.scss */
   a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 283, ../sass/sass/main.scss */
+  /* line 403, ../sass/sass/main.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 287, ../sass/sass/main.scss */
+  /* line 407, ../sass/sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 291, ../sass/sass/main.scss */
+  /* line 411, ../sass/sass/main.scss */
   tr {
     page-break-inside: avoid;
   }
 
-  /* line 294, ../sass/sass/main.scss */
+  /* line 414, ../sass/sass/main.scss */
   img {
     page-break-inside: avoid;
     max-width: 100% !important;
@@ -333,166 +485,14 @@ textarea {
     margin: 0.5cm;
 }
 
-  /* line 302, ../sass/sass/main.scss */
+  /* line 422, ../sass/sass/main.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 306, ../sass/sass/main.scss */
+  /* line 426, ../sass/sass/main.scss */
   h2, h3 {
     page-break-after: avoid;
-  }
-}
-/* ==========================================================================
-  Clouds
-========================================================================== */
-/* line 314, ../sass/sass/main.scss */
-#clouds {
-  padding: 100px 0;
-  background: #c9dbe9;
-  background: -webkit-linear-gradient(top, #c9dbe9 0%, white 100%);
-  background: -linear-gradient(top, #c9dbe9 0%, white 100%);
-  background: -moz-linear-gradient(top, #c9dbe9 0%, white 100%);
-}
-
-/*Time to finalise the cloud shape*/
-/* line 323, ../sass/sass/main.scss */
-.cloud {
-  width: 200px;
-  height: 60px;
-  background: #fff;
-  border-radius: 200px;
-  -moz-border-radius: 200px;
-  -webkit-border-radius: 200px;
-  position: relative;
-}
-
-/* line 334, ../sass/sass/main.scss */
-.cloud:before, .cloud:after {
-  content: '';
-  position: absolute;
-  background: #fff;
-  width: 100px;
-  height: 80px;
-  position: absolute;
-  top: -15px;
-  left: 10px;
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-}
-
-/* line 350, ../sass/sass/main.scss */
-.cloud:after {
-  width: 120px;
-  height: 120px;
-  top: -55px;
-  left: auto;
-  right: 15px;
-}
-
-/*Time to animate*/
-/* line 356, ../sass/sass/main.scss */
-.x1 {
-  -webkit-animation: moveclouds 15s linear infinite;
-  -moz-animation: moveclouds 15s linear infinite;
-  -o-animation: moveclouds 15s linear infinite;
-}
-
-/*variable speed, opacity, and position of clouds for realistic effect*/
-/* line 363, ../sass/sass/main.scss */
-.x2 {
-  left: 200px;
-  -webkit-transform: scale(0.6);
-  -moz-transform: scale(0.6);
-  transform: scale(0.6);
-  opacity: 0.6;
-  /*opacity proportional to the size*/
-  /*Speed will also be proportional to the size and opacity*/
-  /*More the speed. Less the time in 's' = seconds*/
-  -webkit-animation: moveclouds 25s linear infinite;
-  -moz-animation: moveclouds 25s linear infinite;
-  -o-animation: moveclouds 25s linear infinite;
-}
-
-/* line 377, ../sass/sass/main.scss */
-.x3 {
-  left: -250px;
-  top: -200px;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0.8;
-  /*opacity proportional to the size*/
-  -webkit-animation: moveclouds 20s linear infinite;
-  -moz-animation: moveclouds 20s linear infinite;
-  -o-animation: moveclouds 20s linear infinite;
-}
-
-/* line 390, ../sass/sass/main.scss */
-.x4 {
-  left: 470px;
-  top: -250px;
-  -webkit-transform: scale(0.75);
-  -moz-transform: scale(0.75);
-  transform: scale(0.75);
-  opacity: 0.75;
-  /*opacity proportional to the size*/
-  -webkit-animation: moveclouds 18s linear infinite;
-  -moz-animation: moveclouds 18s linear infinite;
-  -o-animation: moveclouds 18s linear infinite;
-}
-
-/* line 403, ../sass/sass/main.scss */
-.x5 {
-  left: -150px;
-  top: -150px;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0.8;
-  /*opacity proportional to the size*/
-  -webkit-animation: moveclouds 20s linear infinite;
-  -moz-animation: moveclouds 20s linear infinite;
-  -o-animation: moveclouds 20s linear infinite;
-}
-
-@-webkit-keyframes moveclouds {
-  /* line 417, ../sass/sass/main.scss */
-  0% {
-    margin-left: 1000px;
-  }
-
-  /* line 418, ../sass/sass/main.scss */
-  100% {
-    margin-left: -1000px;
-  }
-}
-
-@-moz-keyframes moveclouds {
-  /* line 421, ../sass/sass/main.scss */
-  0% {
-    margin-left: 1000px;
-  }
-
-  /* line 422, ../sass/sass/main.scss */
-  100% {
-    margin-left: -1000px;
-  }
-}
-
-@-o-keyframes moveclouds {
-  /* line 425, ../sass/sass/main.scss */
-  0% {
-    margin-left: 1000px;
-  }
-
-  /* line 426, ../sass/sass/main.scss */
-  100% {
-    margin-left: -1000px;
   }
 }

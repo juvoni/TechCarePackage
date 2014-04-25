@@ -25,7 +25,7 @@
 	<!-- Add your site or application content here -->
 	<section id="intro">
 		<h1 class="title">Tech Care Package</h1>
-		<div id="clouds">
+		<div id="clouds" data-100="top:120px;opacity:1" data-1100="top:1000px;" data-1500="top:1200px;">
 			<div class="cloud x1"></div>
 			<div class="cloud x2"></div>
 			<div class="cloud x3"></div>
@@ -33,12 +33,12 @@
 			<div class="cloud x5"></div>
 		</div>
 		<div >
-			<img class="carepackage" src="img/carepackage.png" height="637" width="447" alt="Care Package">
+			<img class="carepackage" src="img/carepackage.png" height="637" width="447" alt="Care Package" data-100="top:120px;opacity:1" data-900="top:900px;opacity:0.6;" data-1200="top:1200px;opacity:0;">
 		</div>
 	</section>
 	<script>
 	$(document).ready(function(){
-		$("drop").parallax();
+		var s = skrollr.init();
 	});
 	</script>
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
