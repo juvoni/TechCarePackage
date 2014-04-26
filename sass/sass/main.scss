@@ -35,16 +35,32 @@ q{
 }
 #OnlineCourses{
 	.row{
-		height: 400px;
+		margin-bottom: 100px;
+	}
+	.col-md-4{
+		margin-left: 50px;
+	}
+}
+#RecommendedTechSites{
+	.logo{
+
+	}
+	.col-md-4{
+		margin-left: 50px;
+		margin-bottom: 10px;
+		img{
+
+		}
 	}
 }
 .info{
 	// position: absolute;
 	position: relative;
-	bottom:0;
+	bottom:10;
 }
 .logo{
-	vertical-align: middle;
+	position: relative;
+	// vertical-align: middle;
 	margin-bottom: 20px;
 }
 #intro{
