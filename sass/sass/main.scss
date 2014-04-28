@@ -80,14 +80,24 @@ q{
 // li:focus a  {
 //     color: blue;
 // }
-li{
-	&.active{
-		border-right: 5px solid #2a82bc;
+ul{
+	ul{
+		list-style: none;
+		li{
+			padding: 5px;
+			width: 100%;
+		}
+	}
+	li{
+			&.active>a{
+		border-right: 3px solid #2a82bc;
 		padding-left: 18px;
 		font-weight: 700;
 		background-color: #ecf0f1;
 	}
+	}
 }
+
 section{
 	margin-bottom: 40px;
 }
