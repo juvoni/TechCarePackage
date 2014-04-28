@@ -18,6 +18,7 @@ q{
 	min-height:50px;
 	min-width: 200px;
 	float: left;
+	margin-right: 60px;
 	.affix-top{
 		position:static;
 		margin-top: 30px;
@@ -69,15 +70,23 @@ q{
 #StarterResources{
 	@extend #intro;
 }
-li.active,
-li.active:hover,
-li.active:focus  {
-    background: #9CF;
-}
-li.active a,
-li.active:hover a,
-li:focus a  {
-    color: blue;
+// li.active,
+// li.active:hover,
+// li.active:focus  {
+//     background: #9CF;
+// }
+// li.active a,
+// li.active:hover a,
+// li:focus a  {
+//     color: blue;
+// }
+li{
+	&.active{
+		border-right: 5px solid #2a82bc;
+		padding-left: 18px;
+		font-weight: 700;
+		background-color: #ecf0f1;
+	}
 }
 section{
 	margin-bottom: 40px;
@@ -116,6 +125,28 @@ section{
     0%{-webkit-transform:rotate(-4deg)}
     50%{-webkit-transform:rotate(4deg)}
     100%{-webkit-transform:rotate(-4deg)}
+}
+
+
+.bs-callout {
+	margin: 20px 0;
+	padding: 20px;
+	border-left: 3px solid #eee;
+	&.bs-callout-danger {
+		background-color: #fdf7f7;
+		border-color: #d9534f;
+	}
+}
+.language{
+	padding: 0;
+	margin: 0;
+	.languageName{
+		font-weight: bold;
+	}
+}
+.languageTitle{
+	font-size: 30px;
+	font-weight: bold;
 }
 /* ==========================================================================
   Clouds
