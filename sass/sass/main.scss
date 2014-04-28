@@ -79,7 +79,9 @@ li.active:hover a,
 li:focus a  {
     color: blue;
 }
-
+section{
+	margin-bottom: 40px;
+}
 .carepackage{
 	position:absolute;
 	top: 120px;
@@ -92,19 +94,18 @@ li:focus a  {
   -webkit-animation:swing 3s infinite ease-in-out;
   -webkit-transform-origin:top;
 }
-
-.title{
-	position: absolute;
-	top: 20px;
-	width: 100%;
-	text-align: center;
-	font-family: Garamond, serif;
-	line-height: 1em;
-	color: #fff9d6;
-	font-weight:bold;
-	font-size: 94px;
-	text-shadow:0px 0px 0 rgb(222,222,222),1px 1px 0 rgb(209,209,209),2px 2px 0 rgb(197,197,197),3px 3px 0 rgb(184,184,184),4px 4px 0 rgb(172,172,172),5px 5px 0 rgb(159,159,159),6px 6px 0 rgb(147,147,147), 7px 7px 0 rgb(135,135,135),8px 8px 7px rgba(0,0,0,0.35),8px 8px 1px rgba(0,0,0,0.5),0px 0px 7px rgba(0,0,0,.2);
-}
+	.title{
+		position: absolute;
+		top: 20px;
+		width: 100%;
+		text-align: center;
+		font-family: Garamond, serif;
+		line-height: 1em;
+		color: #fff9d6;
+		font-weight:bold;
+		font-size: 94px;
+		text-shadow:0px 0px 0 rgb(222,222,222),1px 1px 0 rgb(209,209,209),2px 2px 0 rgb(197,197,197),3px 3px 0 rgb(184,184,184),4px 4px 0 rgb(172,172,172),5px 5px 0 rgb(159,159,159),6px 6px 0 rgb(147,147,147), 7px 7px 0 rgb(135,135,135),8px 8px 7px rgba(0,0,0,0.35),8px 8px 1px rgba(0,0,0,0.5),0px 0px 7px rgba(0,0,0,.2);
+	}
 
 @-moz-keyframes swing{
     0%{-moz-transform:rotate(-4deg)}

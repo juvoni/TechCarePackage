@@ -24,15 +24,15 @@
 	<![endif]-->
 	<!-- Add your site or application content here -->
 	<section id="hero">
-		<h1 class="title">Tech Care Package</h1>
-		<div id="clouds" data-100="top:120px;opacity:1" data-1100="top:1000px;" data-1500="top:1200px;">
+		<div id="skrollr-body">
+			<h1 class="title">Tech Care Package</h1>
+			<div id="clouds" data-100="top:120px;opacity:1" data-1100="top:1000px;" data-1500="top:1200px;">
 			<div class="cloud x1"></div>
 			<div class="cloud x2"></div>
 			<div class="cloud x3"></div>
 			<div class="cloud x4"></div>
 			<div class="cloud x5"></div>
 		</div>
-		<div >
 			<img class="carepackage" src="img/carepackage.png" height="637" width="447" alt="Care Package" data-100="top:120px;opacity:1" data-400="top:400px;opacity:0.6;" data-600="top:600px;opacity:0;">
 		</div>
 	</section>
@@ -50,6 +50,7 @@
 						<li class=""><a href="#OnlineCourses">Online Courses</a></li>
 						<li class=""><a href="#RecommendedTechSites">Recommended Tech Sites</a></li>
 						<li class=""><a href="#BeginnerVocab">Beginner Vocab</a></li>
+						<li class=""><a href="#BeginnerVocab">Beginner Vocab</a></li>
 					</ul>
 				</a></li>
 			</ul>
@@ -59,8 +60,6 @@
 				<h1 class="page-header">Intro</h1>
 				<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, aperiam, eos neque numquam a aliquam et quas quibusdam cum veniam enim reprehenderit magnam! Neque excepturi repellendus commodi deserunt quod officiis.</span>
 				<span>Saepe, aliquid ab possimus id corrupti unde nostrum omnis nemo beatae aut esse impedit repudiandae voluptate quo tenetur iste aspernatur distinctio similique sed quas. Eaque alias rem nostrum facere nobis.</span>
-				<span>Porro, ab, nobis, officia expedita praesentium unde quas laudantium obcaecati cupiditate tempora facilis repellat debitis molestias eligendi laborum nam repellendus minima ratione dolorum corporis perferendis omnis pariatur iure eum sunt?</span>
-				<span>Dolor, cupiditate, nesciunt, iste expedita ab labore commodi fuga quisquam molestiae unde praesentium dicta optio assumenda illum maxime a qui? Soluta, porro expedita molestiae fugiat omnis reiciendis illum unde doloribus?</span></p>
 			</section>
 			<section id="StarterResources" class="row">
 				<h1 class="page-header">Starter Resources</h1>
@@ -181,14 +180,42 @@
 					</div>
 				</div>
 			</section>
+			<section id="Programming">
+				<h2 class="page-header"></h2>
+				<p class="pTitle">What is a Programming Language?</p>
+				<a href="http://stackoverflow.com/a/1325712" target="_blank">http://stackoverflow.com/a/1325712</a>
+				<p class="pTitle">Popular Programming Languages</p>
+				<ul class="programminglanguages">
+					<li class="language"><span class="languageName">C, C++:</span>Low-level operating system, software, libraries. Making things fast.</li>
+					<li class="language"><span class="languageName">Java</span>Just about everything, but especially cross-platform desktop applications, server-side webapplications, and Android</li>
+					<li class="language"><span class="languageName">Objective C</span>Mac OS X applications, iOS apps</li>
+					<li class="language"><span class="languageName">C#</span>Windows desktop applications, Microsoft stack web applications (very similar to Java)</li>
+					<li class="language"><span class="languageName">PHP</span>server-side web applications</li>
+					<li class="language"><span class="languageName">Perl</span>general scripting, string processing</li>
+					<li class="language"><span class="languageName">Python</span>general scripting, server-side web applications, mathematic and scientific applications,Linux desktop applications</li>
+					<li class="language"><span class="languageName">Ruby</span>general scripting, server-side web applications</li>
+					<li class="language"><span class="languageName">JavaScript</span>client-side web applications, server-side web applications</li>
+				</ul>
+
+<!-- Source: Mat Brown, Software Engineer | Answer from Quora http://qr.ae/TvguB
+If you are a beginner don’t overwhelm yourself by learning many languages at
+once. Experimentwith one first or at most 2, building small programs incrementally until you can take on bigger things.
+
+In layman’s terms, what are the major programming langu
+ages, andwhat are they used for?
+http://i.saac.me/post/in-laymans-terms-major-programming-languages-used-for/
+Analogy using female personalities to describe programming languages.
+[Clever & funny read] -->
+
+			</section>
 			<section id="Vocab">
-				<h2>Technology Beginner Vocabulary</h2>
+				<h2 class="page-header">Technology Beginner Vocabulary</h2>
 				<div>
-					<p class="title">The Top 30 Internet Terms for Beginners, 2013</p>
+					<p class="pTitle">The Top 30 Internet Terms for Beginners, 2013</p>
 					<a href="http://netforbeginners.about.com/od/internetlanguage/tp/the-top-internet-terms-for-beginners.htm" target="_blank"></a>
 				</div>
 				<div>
-					<p class="title">Digital Journalist Survival Guide: A Glossary of Tech Terms You Should Know</p>
+					<p class="pTitle">Digital Journalist Survival Guide: A Glossary of Tech Terms You Should Know</p>
 					<a href="http://www.poynter.org/how-tos/digital-strategies/104015/digital-journalist-survival-guide-a-glossary-of-tech-terms-you-should-know/" target="_blank"></a>
 				</div>
 			</section>
@@ -196,16 +223,7 @@
 		</div>
 	</div>
 	<script>
-	$(document).ready(function(){
-		var s = skrollr.init();
-		//$('#container').scrollspy({ target: '.sidebar' });
-	// $('#nav-wrapper').height($("#nav").height());
-	$('.title-header').affix({
-		offset: {
-		top: 100
-		}
-	});
-	});
+
 	</script>
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<!--<script>
@@ -217,6 +235,7 @@
 	ga('create','UA-XXXXX-X');ga('send','pageview');
 	</script>-->
 </body>
+<script src="bower_components/protonet/jquery.inview/jquery.inview.min.js"></script>
 <script src="bower_components/parallax/deploy/jquery.parallax.min.js"></script>
 <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
 <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/affix.js"></script>
